@@ -6,7 +6,7 @@ body {
   margin: 0;
 
   
-  background-color: #1F242E;
+  background-color: #171717;
   color: #FFFFFF;
   font-family: 'Roboto', sans-serif;
 
@@ -28,6 +28,21 @@ a {
   }
   body {
     color: white;
-    background: black;
+    /* background: black; */
   }
 }
+
+.bg-gradient {
+  background: -moz-linear-gradient(225deg, rgba(2,0,36,1) 0%, rgba(87,9,121,0.9990371148459384) 45%, rgba(22,15,92,1) 85%);
+  background: -webkit-linear-gradient(225deg, rgba(2,0,36,1) 0%, rgba(87,9,121,0.9990371148459384) 45%, rgba(22,15,92,1) 85%);
+  background: linear-gradient(225deg, rgba(2,0,36,1) 0%, rgba(87,9,121,0.9990371148459384) 45%, rgba(22,15,92,1) 85%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#160f5c",GradientType=1);
+    ;
+  }
+  .bt1-gradient {
+    background: rgb(87,9,121);
+  background: -moz-linear-gradient(90deg, rgba(87,9,121,1) 0%, rgba(21,28,177,1) 45%, rgba(189,105,18,1) 85%);
+  background: -webkit-linear-gradient(90deg, rgba(87,9,121,1) 0%, rgba(21,28,177,1) 45%, rgba(189,105,18,1) 85%);
+  background: linear-gradient(90deg, rgba(87,9,121,1) 0%, rgba(21,28,177,1) 45%, rgba(189,105,18,1) 85%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#570979",endColorstr="#bd6912",GradientType=1);
+  }

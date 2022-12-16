@@ -14,7 +14,9 @@ const HeroSection = ({ tokenData }) => {
   const [openSetting, setOpenSetting] = useState(false);
   const [openToken, setOpenToken] = useState(false);
   const [openTokensTwo, setOpenTokensTwo] = useState(false);
-
+  const [slippageAmount, setSlippageAmount] = useState(undefined);
+  const [deadlineMinutes, setDeadlineMinutes] = useState(undefined);
+  
   const { singleSwapToken, connectWallet, account, ether, dai } =
     useContext(SwapTokenContext);
 
@@ -54,8 +56,10 @@ const HeroSection = ({ tokenData }) => {
               height={20}
               alt="ether"
             />
-            {tokenOne.name || "ETH"}
-            <small>{ether.slice(0, 7)}</small>
+            {/* {tokenOne.name || "WETH"} */}
+            {/* <small>{ether.slice(0, 7)}</small> */}
+             {"WETH"}
+             <small>{ether.slice(0, 7)}</small>
           </button>
         </div>
 
@@ -90,7 +94,12 @@ const HeroSection = ({ tokenData }) => {
         )}
       </div>
 
-      {openSetting && <Token setOpenSetting={setOpenSetting} />}
+      {openSetting && <Token setOpenSetting={setOpenSetting}  
+      slippageAmount={slippageAmount} 
+      setSlippageAmount={setSlippageAmount} 
+      deadlineMinutes={deadlineMinutes}  
+      setDeadlineMinutes={setDeadlineMinutes}
+      />}
 
       {openToken && (
         <SearchToken

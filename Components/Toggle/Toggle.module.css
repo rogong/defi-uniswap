@@ -1,8 +1,6 @@
-
 .Toggle{
     text-align: center;
 }
-
 .Toggle_switch_box{
     position: relative;
     width: 75px;
@@ -13,6 +11,7 @@
 
 .Toggle_checkbox{
     display: none;
+
 }
 
 .Toggle_label{
@@ -41,19 +40,19 @@
     font-weight: bold;
     box-sizing: border-box;
 }
-
 .Toggle_inner:before{
     content: "Yes";
     padding-left: 10px;
-    background-color: #cff80b;
-    color: #1e1e1e;
+    background-color: rebeccapurple;
+    color: #fff;
+    
 }
 
 .Toggle_inner:after{
     content: "No";
     padding-right: 10px;
-    background-color: #cff80b;
-    color: #1e1e1e;
+    background-color: rebeccapurple;
+    color: #fff;
     text-align: right;
 }
 
@@ -68,7 +67,7 @@
     right: 40px;
     border: 0 solid #bbb;
     border-radius: 20px;
-    transition:  all 0.3s ease-in 0s;
+    transition: all 0.3s ease-in 0s;
 }
 
 .Toggle_checkbox:checked + .Toggle_label .Toggle_inner{
@@ -76,5 +75,5 @@
 }
 
 .Toggle_checkbox:checked + .Toggle_label .Toggle_switch{
-    right: 0;
+    right:  0;
 }

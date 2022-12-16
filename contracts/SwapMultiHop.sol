@@ -10,9 +10,16 @@ contract SwapMultiHop{
         ISwapRouter public constant swapRouter =
         ISwapRouter(0xE592427A0AEce92De3Edee1F18E0157C05861564);
 
-    address public constant DAI = 0x6B175474E89094C44Da98b954EedeAC495271d0F;
-    address public constant WETH9 = 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2;
-    address public constant USDC = 0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48;
+      //ETH
+    // address public constant DAI = 0x6B175474E89094C44Da98b954EedeAC495271d0F;
+    // address public constant WETH9 = 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2;
+    // address public constant USDC = 0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48;
+
+    //MUMBAI
+    address public constant DAI =  0xd393b1E02dA9831Ff419e22eA105aAe4c47E1253;
+    address public constant WETH9 = 0xA6FA4fB5f76172d178d61B04b0ecd319C5d1C0aa;
+    address public constant USDC =  0xe6b8a5CF854791412c1f6EFC7CAf629f5Df1c747;
+    
 
     function swapExactInputMultihop(uint amountIn) external returns (uint amountOut){
         TransferHelper.safeTransferFrom(WETH9, msg.sender, address(this), amountIn);

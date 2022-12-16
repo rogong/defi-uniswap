@@ -1,4 +1,4 @@
-import uniswap from "./uniswap.png";
+import uniswap from "./logo.png";
 import search from "./Search.png";
 import ether from "./ether.png";
 import arrow from "./arrow.png";

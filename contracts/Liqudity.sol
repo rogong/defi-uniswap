@@ -11,15 +11,27 @@ import "@uniswap/v3-periphery/contracts/base/LiquidityManagement.sol";
 import "hardhat/console.sol";
 
 contract LiquidityExamples is IERC721Receiver {
+    //ETH
     address public constant DAI = 0x6B175474E89094C44Da98b954EedeAC495271d0F;
-    address public constant USDC = 0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48;
+   address public constant USDC = 0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48;
+
+    //POLYGON MAINET
+    // address public constant DAI =  0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063;
+    // address public constant USDC = 0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174;
+
+    //MUMBAI
+    // address public constant DAI =  0xd393b1E02dA9831Ff419e22eA105aAe4c47E1253;
+    // address public constant USDC = 0xe6b8a5CF854791412c1f6EFC7CAf629f5Df1c747;
 
     // 0.01% fee
     uint24 public constant poolFee = 100;
 
-    INonfungiblePositionManager public nonfungiblePositionManager = 
-        INonfungiblePositionManager(0xC36442b4a4522E871399CD717aBDD847Ab11FE88);
+    //ETH
+    //INonfungiblePositionManager public nonfungiblePositionManager = INonfungiblePositionManager(0xC36442b4a4522E871399CD717aBDD847Ab11FE88);
 
+    //MUMBAI
+    INonfungiblePositionManager public nonfungiblePositionManager = INonfungiblePositionManager(0xC36442b4a4522E871399CD717aBDD847Ab11FE88);
+    
     /// @notice Represents the deposit of an NFT
     struct Deposit {
         address owner;

@@ -1,25 +1,4 @@
-.HeroSection{
-    width: 90%;
-    margin: 1rem auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
 
-.HeroSection_box{
-    margin-top: 5rem;
-    background-color: #1e1e1e;
-    padding: 1rem;
-    border-radius: .5rem;
-    width: 30rem;
-}
-
-.HeroSection_box_heading{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
 .HeroSection_box_input{
     display: flex;
@@ -54,25 +33,8 @@
     border: 0;
 }
 
-.HeroSection_box_btn{
-    background-color: rgba(87,9,121,1);
-    border: 0;
-    outline: 0;
-    width: 100%;
-    margin-top: 1.5rem;
-    padding: 1rem;
-    border-radius: 2rem;
-    font-size: 1.2rem;
-    color: #fff;
-}
-
 @media only screen and (max-width: 35em) {
-    .HeroSection{
-        width: 95%;
-    }
-    .HeroSection_box{
-        width: 95%;
-    }
+  
     .HeroSection_box_input input{
         width: 50%;
     }

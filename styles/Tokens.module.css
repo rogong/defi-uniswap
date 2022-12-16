@@ -29,8 +29,8 @@
     padding: 0rem 2rem;
     line-height: 0;
     border-radius: .5rem;
-    color: #CFF80B;
-    border: 1px solid #d1f80b53;
+    color: #6a2a7a;
+    border: 1px solid rgb(87,9,121);
 }
 
 .Tokens_box_search{
@@ -42,14 +42,14 @@
     line-height: 0;
     border-radius: .5rem;
     width: 50%;
-    border: 1px solid #d1f80b53;
+    border: 1px solid rgb(87,9,121);
 }
 
 .Tokens_box_search input{
     background-color: transparent;
     outline: none;
     border: 0;
-    color: #CFF80B; 
+    color: #6a2a7a; 
     width: 90%;
 }
 

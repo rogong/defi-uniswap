@@ -129,6 +129,7 @@ export const connectingWithIWTHToken = async () => {
 //FETCHING CONTRACT------------------------
 
 //IWTH TOKEN FETCHING
+//MUMBAI const DAIAddress = "0xd393b1E02dA9831Ff419e22eA105aAe4c47E1253";
 const DAIAddress = "0x6B175474E89094C44Da98b954EedeAC495271d0F";
 export const fetchDAIContract = (signerOrProvider) =>
   new ethers.Contract(DAIAddress, IWETHABI, signerOrProvider);

@@ -1,44 +1,50 @@
-
-.Model{
+.Modal{
+ 
     position: absolute;
-    inset:  0% 0% 0% 0%;
-    background-color: #1e1e1e5a;
+    inset: 0% 0% 0% 0%;
+    background-color: #1e1e1e;
     display: grid;
     align-items: center;
     justify-content: center;
     height: 100vh;
     width: 100vw;
     z-index: 111111111;
+   
 }
 
-.Model_box{
+.Modal_box{
+
     background-color: #1e1e1e;
     padding: 2rem;
     border-radius: .5rem;
 }
 
-.Model_box_heading{
+.Modal_box_heading{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.Model_box_heading p{
+.Modal_box_heading p{
     font-size: 1.2rem;
 }
 
-.Model_box_wallet p{
-    background-color: #cff80b;
+.Modal_box_wallet p {
+    background-color: rgba(87,9,121,1);
     padding: 1rem;
     border-radius: .5rem;
-    color: #1e1e1e;
+    color: #fff;
     font-weight: 700;
     cursor: pointer;
 }
-
-.Model_box_para{
+.Modal_box_para{
     padding: 1rem;
     line-height: 1.2;
-    border:  1px solid #cff80b;
+    border: 1px solid rgba(87,9,121,1);
     border-radius: .5rem;
+}
+.Modal_box_img{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
 }

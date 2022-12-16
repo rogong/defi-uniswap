@@ -8,6 +8,7 @@ import Token from "./Token/Token";
 import AllTokens from "./AllTokens/AllTokens";
 import PoolAdd from "./PoolAdd/PoolAdd";
 import PoolConnect from "./PoolConnect/PoolConnect";
+import Bgdrawn from './Bgdrawn/Bgdrawn'
 
 export {
   HeroSection,
@@ -20,4 +21,5 @@ export {
   AllTokens,
   PoolAdd,
   PoolConnect,
+  Bgdrawn
 };

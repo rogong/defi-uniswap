@@ -10,6 +10,7 @@ import { PoolAdd, PoolConnect } from "../Components/index";
 const Pool = () => {
   return (
     <div className={Style.Pool}>
+      
       <PoolAdd />
       <PoolConnect />
     </div>

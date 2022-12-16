@@ -6,7 +6,7 @@ import Style from "./Token.module.css";
 import images from "../../assets";
 import { Toggle } from "../index";
 
-const Token = ({ setOpenSetting }) => {
+const Token = ({ setOpenSetting, slippageAmount, setSlippageAmount, deadlineMinutes,  setDeadlineMinutes}) => {
   return (
     <div className={Style.Token}>
       <div className={Style.Token_box}>
@@ -27,7 +27,11 @@ const Token = ({ setOpenSetting }) => {
 
         <div className={Style.Token_box_input}>
           <button>Auto</button>
-          <input type="text" placeholder="0.10%" />
+          <input type="text" 
+          placeholder="0.10%"
+          value={slippageAmount}
+          onChange={e => setSlippageAmount(e.target.value)}
+           />
         </div>
 
         <p className={Style.Token_box_para}>
@@ -36,7 +40,11 @@ const Token = ({ setOpenSetting }) => {
         </p>
 
         <div className={Style.Token_box_input}>
-          <input type="text" placeholder="30" />
+          <input type="text"
+           placeholder="30" 
+           value={deadlineMinutes}
+           onChange={e => setDeadlineMinutes(e.target.value)}
+           />
           <button>minutes</button>
         </div>
 

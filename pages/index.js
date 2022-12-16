@@ -1,12 +1,14 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, {  } from "react";
 
 //INTERNAL IMPORT
-import { HeroSection } from "../Components/index";
+import { Bgdrawn, HeroSection } from "../Components/index";
 
 const Home = () => {
   return (
     <div>
+        <Bgdrawn />
       <HeroSection accounts="hey" tokenData="DATA" />
+      <Bgdrawn />
     </div>
   );
 };
